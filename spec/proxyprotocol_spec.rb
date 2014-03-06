@@ -16,7 +16,7 @@ describe "Proxyprotocol::TCPSocket" do
                                           "10.0.0.1", 1000,
                                           "192.168.1.1", 80)
     thread.join
-    result.should eql("PROXY TCP4 10.0.0.1 192.168.1.1 1000 80\r\n")
+    expect(result).to eq("PROXY TCP4 10.0.0.1 192.168.1.1 1000 80\r\n")
   end
 
   it "should send unknown protocol header" do
@@ -30,7 +30,7 @@ describe "Proxyprotocol::TCPSocket" do
     server_port = server_socket.addr[1]
     socket = Proxyprotocol::TCPSocket.new("127.0.0.1", server_port)
     thread.join
-    result.should eql("PROXY UNKNOWN\r\n")
+    expect(result).to eq("PROXY UNKNOWN\r\n")
   end
 
 end
