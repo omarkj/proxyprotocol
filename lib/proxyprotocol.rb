@@ -2,7 +2,7 @@ require "proxyprotocol/version"
 require "socket"
 require "ipaddr"
 
-module Proxyprotocol
+module ProxyProtocol
   class TCPSocket < TCPSocket
     def initialize(remote_host, remote_port, source_ip=nil, source_port=nil, 
                    dest_ip=nil, dest_port=nil, local_host=nil, local_port=nil)

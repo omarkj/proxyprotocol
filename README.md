@@ -23,8 +23,8 @@ Or install it yourself as:
 Use it like `TCPSocket`.
 
 ``` ruby
-socket = Proxyprotocol::TCPSocket.new(RemoteHost, RemotePort, SourceIp,
-SourcePort, DestIp, DestPort)
+socket = ProxyProtocol::TCPSocket.new(RemoteHost, RemotePort, SourceIp,
+                                      SourcePort, DestIp, DestPort)
 ```
 
 ## Run the tests
@@ -35,7 +35,7 @@ $ bundle exec rspec
 
 ## Contributing
 
-1. Fork it ( http://github.com/heroku/proxyprotocol/fork )
+1. Fork it ( http://github.com/omarkj/proxyprotocol/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

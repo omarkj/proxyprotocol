@@ -1,3 +1,3 @@
-module Proxyprotocol
+module ProxyProtocol
   VERSION = "0.0.1"
 end

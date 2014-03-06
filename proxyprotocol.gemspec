@@ -5,11 +5,11 @@ require 'proxyprotocol/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "proxyprotocol"
-  spec.version       = Proxyprotocol::VERSION
+  spec.version       = ProxyProtocol::VERSION
   spec.authors       = ["Ómar Kjartan Yasin"]
-  spec.email         = ["omarkj@gmail.com"]
+  spec.email         = ["omarkj@heroku.com"]
   spec.summary       = "A wrapper around TCPSocket that support the Proxy Protocol"
-  spec.homepage      = "https://github.com/heroku/proxyprotocol"
+  spec.homepage      = "https://github.com/omarkj/proxyprotocol"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
