@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Proxyprotocol::VERSION
   spec.authors       = ["Ómar Kjartan Yasin"]
   spec.email         = ["omarkj@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = "A wrapper around TCPSocket that support the Proxy Protocol"
+  spec.homepage      = "https://github.com/heroku/proxyprotocol"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
