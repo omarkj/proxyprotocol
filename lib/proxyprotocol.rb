@@ -13,7 +13,7 @@ module Proxyprotocol
       return self
     end
 
-    @private
+    private
     def create_proxy_protocol_header(source_ip, source_port, dest_ip, dest_port)
       if [source_ip, source_port, dest_ip, dest_port].include?(nil)
         return "PROXY UNKNOWN\r\n"
@@ -25,7 +25,6 @@ module Proxyprotocol
       end
     end
 
-    @private
     def get_ip_version(source_ip, dest_ip)
       if source_ip.ipv4? and dest_ip.ipv4?
         return "TCP4"
